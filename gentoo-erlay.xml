@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<layman>
+	<overlay
+		type = "git"
+		src = "git://github.com/ngerakines/erlang_portage.git"
+		contact = "nick@gerakines.net"
+		status = "unofficial"
+		name = "erlang_portage">
+		<link>http://github.com/ngerakines/erlang_portage/tree/master</link>
+		<description>This overlay provides access to several of the Erlang libraries and packages on GitHub.</description>
+	</overlay>
+</layman>
