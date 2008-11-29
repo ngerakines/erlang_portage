@@ -7,7 +7,7 @@ HOMEPAGE="http://github.com/ngerakines/mochiweb"
 SRC_URI="http://github.com/tarballs/ngerakines-mochiweb-32b3bc0a785b8cf64fb1191ded504ea3ae96417f.zip"
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~x86"
+KEYWORDS="~x86 x86 ~amd64 amd64"
 IUSE=""
 
 COMMON_DEP="dev-lang/erlang"

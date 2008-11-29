@@ -8,7 +8,7 @@ HOMEPAGE="http://github.com/ngerakines/erlang_wowarmory"
 SRC_URI="http://github.com/tarballs/ngerakines-erlang_wowarmory-8933588a9f634c046bd1c903ebf48f8d12714e14.zip"
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~x86"
+KEYWORDS="~x86 x86 ~amd64 amd64"
 IUSE="source"
 
 COMMON_DEP="dev-lang/erlang"

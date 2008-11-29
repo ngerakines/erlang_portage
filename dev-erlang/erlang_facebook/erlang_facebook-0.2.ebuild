@@ -7,7 +7,7 @@ HOMEPAGE="http://github.com/ngerakines/erlang_facebook"
 SRC_URI="http://github.com/tarballs/ngerakines-erlang_facebook-62c6fe0daef3429bbb91189124e3d3b153de3f64.zip"
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~x86"
+KEYWORDS="~x86 x86 ~amd64 amd64"
 IUSE="source"
 
 COMMON_DEP="dev-lang/erlang"
