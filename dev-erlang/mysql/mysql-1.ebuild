@@ -4,10 +4,10 @@
 
 DESCRIPTION="A native Erlang MySQL client library."
 HOMEPAGE="http://github.com/ngerakines/erlang_mysql"
-SRC_URI="http://github.com/tarballs/ngerakines-erlang_mysql-55144e61022b772922606ff67616e6d12f2dbce1.zip"
+SRC_URI="http://portage.socklabs.com/${P}.tgz"
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64 amd64"
+KEYWORDS="~x86 x86 ~amd64 amd64"
 IUSE=""
 
 COMMON_DEP="dev-lang/erlang"
@@ -17,13 +17,10 @@ RDEPEND="${COMMON_DEP}"
 RESTRICT="primaryuri"
 
 src_compile() {
-	cd ngerakines-erlang_mysql-55144e61022b772922606ff67616e6d12f2dbce1
 	make || edie "make failed"
 }
 
 src_install() {
-	cd ngerakines-erlang_mysql-55144e61022b772922606ff67616e6d12f2dbce1
-	# binaries
 	dodir /usr/lib/erlang/lib/${P}/ebin
 	insinto /usr/lib/erlang/lib/${P}/ebin
 	doins ebin/*
