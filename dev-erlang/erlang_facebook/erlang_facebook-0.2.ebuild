@@ -4,13 +4,13 @@
 
 DESCRIPTION="An Erlang client library for the Facebook Platform."
 HOMEPAGE="http://github.com/ngerakines/erlang_facebook"
-SRC_URI="http://github.com/tarballs/ngerakines-erlang_facebook-62c6fe0daef3429bbb91189124e3d3b153de3f64.zip"
+SRC_URI="http://portage.socklabs.com/${P}.tgz"
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~x86 x86 ~amd64 amd64"
 IUSE="source"
 
-COMMON_DEP="dev-lang/erlang"
+COMMON_DEP="dev-lang/erlang dev-erlang/mochiweb"
 DEPEND="${COMMON_DEP} app-arch/unzip"
 RDEPEND="${COMMON_DEP}"
 
