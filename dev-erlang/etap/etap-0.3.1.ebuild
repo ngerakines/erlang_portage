@@ -4,10 +4,10 @@
 
 DESCRIPTION="A TAP test harness in Erlang."
 HOMEPAGE="http://github.com/ngerakines/etap"
-SRC_URI="http://github.com/tarballs/ngerakines-etap-48b714744d60bac7b51c29a043755773529fd499.zip"
+SRC_URI="http://portage.socklabs.com/etap-0.3.1.tgz"
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~x86"
+KEYWORDS="~x86 x86 ~amd64 amd64"
 IUSE=""
 
 COMMON_DEP="dev-lang/erlang"
@@ -17,13 +17,11 @@ RDEPEND="${COMMON_DEP}"
 RESTRICT="primaryuri"
 
 src_compile() {
-	cd ngerakines-etap-48b714744d60bac7b51c29a043755773529fd499
 	mkdir ebin
 	make || edie "make failed"
 }
 
 src_install() {
-    cd ngerakines-etap-48b714744d60bac7b51c29a043755773529fd499
 	dodir /usr/lib/erlang/lib/${P}/ebin
 	insinto /usr/lib/erlang/lib/${P}/ebin
 	doins ebin/*.beam
