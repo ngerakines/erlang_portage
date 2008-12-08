@@ -17,7 +17,6 @@ RDEPEND="${COMMON_DEP}"
 RESTRICT="primaryuri"
 
 src_compile() {
-	cd ngerakines-erlang_facebook-62c6fe0daef3429bbb91189124e3d3b153de3f64
 	make || edie "make failed"
 }
 
@@ -25,13 +24,13 @@ src_install() {
 	# binaries
 	dodir /usr/lib/erlang/lib/${P}/ebin
 	insinto /usr/lib/erlang/lib/${P}/ebin
-	doins ngerakines-erlang_facebook-62c6fe0daef3429bbb91189124e3d3b153de3f64/*.beam
+	doins *.beam
 
 	# source code
 	if use source ; then
 		dodir /usr/lib/erlang/lib/${P}/src
 		insinto /usr/lib/erlang/lib/${P}/src
-		doins ngerakines-erlang_facebook-62c6fe0daef3429bbb91189124e3d3b153de3f64/src/*
+		doins src/*
 	fi
 }
 
