@@ -3,8 +3,8 @@
 # $Header: $
 
 DESCRIPTION="A TAP test harness in Erlang."
-HOMEPAGE="http://github.com/ngerakines/etap"
-SRC_URI="http://portage.socklabs.com/etap-0.3.1.tgz"
+HOMEPAGE="http://ngerakines.github.com/etap"
+SRC_URI="http://ngerakines.github.com/etap/sources/etap-0.3.2.tgz"
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~x86 x86 ~amd64 amd64"
