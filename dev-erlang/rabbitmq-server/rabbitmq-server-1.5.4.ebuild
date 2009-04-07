@@ -16,7 +16,7 @@ DEPEND="dev-lang/erlang
 		dev-python/simplejson"
 
 src_install() {
-		make install TARGET_DIR="${D}/usr/lib/erlang/lib/${PN}/" \
+		make install TARGET_DIR="${D}/usr/lib/erlang/lib/${PN/-/_}-${PV}/" \
 			 		 SBIN_DIR="${D}/usr/sbin/" \
 					 MAN_DIR="${D}/usr/lib/erlang/man/"
 }
