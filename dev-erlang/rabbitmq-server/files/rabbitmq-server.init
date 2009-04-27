@@ -1,0 +1,22 @@
+#!/sbin/runscript
+# Copyright 1999-2009 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
+# $Header: /var/cvsroot/gentoo-x86/net-misc/rabbitmq-server/files/rabbitmq-server.init,v 1.1 2009/04/19 12:42:55 caleb Exp $
+
+depend() {
+	need net
+	use dns
+}
+
+start() {
+	ebegin "Starting RabbitMQ..."
+	rabbitmq-server -detached
+	eend $?
+}
+
+stop() {
+	ebegin "Stopping RabbitMQ..."
+	rabbitmqctl stop
+	eend $?
+}
+
